@@ -92,8 +92,31 @@ const AllEmployeeList = () => {
                 </tbody>
                 </table>
                 </div> : 
-                <div className="">
-                     Card
+                <div className=" grid grid-cols-3 gap-8 my-3">
+                     {
+                        users.map(item => <div key={item._id} className="relative flex flex-col text-gray-700 bg-white shadow-md  rounded-xl bg-clip-border">
+                        <div className="p-6">
+                          <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            {item.name}
+                          </h5>
+                          <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                           {item.role}
+                          </p>
+                        </div>
+                        <div className="p-6 pt-0 flex gap-3 justify-center items-center">
+                          <div>
+                          {
+                              item.role == "hr" ? <h2 className=" ">This user is HR</h2> :<button onClick={()=>handleHr(item.email,item.name)} className=" btn bg-blue-700 rounded-none text-white btn-sm btn-ghost">Make HR</button>
+                          }
+                          </div>
+                          <div>
+                          {
+                              item.isFired ? <h2 className=" text-red-800 font-semibold">Fired</h2> : <button onClick={()=>handleFire(item.email,item.name)} className=" btn btn-sm btn-ghost bg-red-800 text-white">Fire</button>
+                          }
+                          </div>
+                        </div>
+                      </div>)
+                     }
                 </div>
            }
         </div>
