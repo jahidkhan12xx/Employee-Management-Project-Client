@@ -10,7 +10,7 @@ const AllEmployeeList = () => {
     const [userData,isLoading,refetch] = useUserData();
     const [users,setUsers] = useState();
     useEffect(()=>{
-        const result = userData.filter(item => item.role !== "admin");
+        const result = userData.filter(item => item.role !== "admin" && item.isVerified === true);
         setUsers(result)
 
     },[userData])
@@ -18,7 +18,8 @@ const AllEmployeeList = () => {
     const handleHr = (email,name) =>{
         console.log(email);
 
-        axiosSecure.patch(`/updateRole/${email}`)
+        axiosSecure.patch(`/updateRole/${email}`,
+        )
         .then(res=>{
             console.log(res.data);
             toast.success(`${name} is now HR`)

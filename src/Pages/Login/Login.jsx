@@ -15,7 +15,7 @@ const Login = () => {
     const axiosSecure = useAxiosSecure();
     
 
-    const {login:signIn} = useAuth();
+    const {login:signIn,logOut} = useAuth();
     const { register,formState: { errors }, handleSubmit } = useForm();
   const onSubmit = data => {
     setErr("")
@@ -30,8 +30,13 @@ const Login = () => {
           axiosSecure.get(`/checkingUser/${res.user.email}`)
           .then(res=>{
             if(res?.data?.isFired){
-              toast.error("You are fired")
-              navigate("/login")
+              logOut().then(
+                ()=>{
+                  toast.error("You are fired")
+                  navigate("/login")
+                }
+              ).catch()
+             
             }
             else{
               toast.success('LogIn Successfull.', {

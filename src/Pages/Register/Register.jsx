@@ -52,7 +52,13 @@ const Register = () => {
             updateUser(name,imgURL).then(()=>{
               axiosPublic.post("/users",user)
               .then(res=>{
-                console.log(res.data);
+                if(res.data){
+                  axiosPublic.post("/payment",{
+                    email : email,
+                    payment_history : []
+                  })
+                }
+                
               })
             }).catch();
           }

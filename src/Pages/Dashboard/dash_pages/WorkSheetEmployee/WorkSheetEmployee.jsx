@@ -3,6 +3,7 @@ import SectionHeader from "../../../../components/shared/SectionHeader";
 import useAuth from "../../../../hooks/useAuth";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
 import Loader from "../../../../components/Loader";
+import toast from "react-hot-toast";
 
 
 const WorkSheetEmployee = () => {
@@ -45,7 +46,9 @@ const WorkSheetEmployee = () => {
 
         axiosSecure.post("/workSheet",workData)
         .then(res=>{
-            console.log(res.data);
+            if(res.data.insertedId){
+                toast.success("Task added")
+            }
             refetch();
         })
 
