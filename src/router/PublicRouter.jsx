@@ -49,7 +49,7 @@ const PublicRouter = createBrowserRouter([
             {
                 path:"details/:id",
                 element:<HrRoute><EmployeeDetails></EmployeeDetails></HrRoute>,
-                loader:({params}) => fetch(`http://localhost:5000/api/v1/specificUser/${params.id}`)
+                loader:({params}) => fetch(`https://server11-psi.vercel.app/api/v1/specificUser/${params.id}`)
             },
             
             {
