@@ -1,4 +1,7 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 
@@ -6,25 +9,25 @@ const TestimonialCard = ({item}) => {
     console.log(item);
     return (
         <div>
-          <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
-  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-white bg-transparent shadow-none rounded-xl bg-clip-border">
+          <div data-aos="zoom-in" className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
+  <div data-aos="zoom-in" className="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-white bg-transparent shadow-none rounded-xl bg-clip-border">
     <img
       src={item.avatar}
       alt="tania andrew"
-      class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+      data-aos="zoom-in" className="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
     />
-    <div class="flex w-full flex-col gap-0.5">
-      <div class="flex items-center justify-between">
-        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+    <div data-aos="zoom-in" className="flex w-full flex-col gap-0.5">
+      <div data-aos="zoom-in" className="flex items-center justify-between">
+        <h5 data-aos="zoom-in" className="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
           {item.name}
         </h5>
-        <div class="flex items-center gap-0 5">
+        <div data-aos="zoom-in" className="flex items-center gap-0 5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            class="w-5 h-5 text-yellow-700"
+            data-aos="zoom-in" className="w-5 h-5 text-yellow-700"
           >
             <path
               fill-rule="evenodd"
@@ -37,7 +40,7 @@ const TestimonialCard = ({item}) => {
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            class="w-5 h-5 text-yellow-700"
+            data-aos="zoom-in" className="w-5 h-5 text-yellow-700"
           >
             <path
               fill-rule="evenodd"
@@ -50,7 +53,7 @@ const TestimonialCard = ({item}) => {
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            class="w-5 h-5 text-yellow-700"
+            data-aos="zoom-in" className="w-5 h-5 text-yellow-700"
           >
             <path
               fill-rule="evenodd"
@@ -63,7 +66,7 @@ const TestimonialCard = ({item}) => {
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            class="w-5 h-5 text-yellow-700"
+            data-aos="zoom-in" className="w-5 h-5 text-yellow-700"
           >
             <path
               fill-rule="evenodd"
@@ -76,7 +79,7 @@ const TestimonialCard = ({item}) => {
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
-            class="w-5 h-5 text-yellow-700"
+            data-aos="zoom-in" className="w-5 h-5 text-yellow-700"
           >
             <path
               fill-rule="evenodd"
@@ -86,13 +89,13 @@ const TestimonialCard = ({item}) => {
           </svg>
         </div>
       </div>
-      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+      <p data-aos="zoom-in" className="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
         Frontend Lead @ Google
       </p>
     </div>
   </div>
-  <div class="p-0 mb-6">
-    <p class="block font-sans text-base text-white opacity-80 antialiased font-light leading-relaxed text-inherit">
+  <div data-aos="zoom-in" className="p-0 mb-6">
+    <p data-aos="zoom-in" className="block font-sans text-base text-white opacity-80 antialiased font-light leading-relaxed text-inherit">
      {item.testimonial}
     </p>
   </div>

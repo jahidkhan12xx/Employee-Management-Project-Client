@@ -2,6 +2,11 @@ import { FaBeer } from "react-icons/fa";
 // Import necessary FontAwesome libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 import {
   faDesktop,
   faMobileAlt,
@@ -34,7 +39,7 @@ const ServicesCard = ({items}) => {
     console.log(items);
     
     return (
-        <div className=" text-center">
+        <div data-aos="fade-up"  className=" text-center">
           
             <div className="relative flex flex-col mt-6 text-white border-2 border-white  shadow-md md:w-[16vw] md:h-[28vh] rounded-xl bg-clip-border">
   <div className="p-6">
