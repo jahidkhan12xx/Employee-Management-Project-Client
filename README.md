@@ -1,8 +1,21 @@
-# React + Vite
+# Employee Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to the Coders Booth Website! This platform allows you to efficiently manage employee details, including salaries, work hours, contracts, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Salary Management:** Track and manage employee salaries seamlessly.
+- **Work Hours:** Monitor and record employee work hours efficiently.
+- **Contract Management:** Handle employee contracts with ease.
+- **User Roles:** Assign roles and permissions to different user types.
+- **Reports:** Generate insightful reports for better decision-making.
+
+## Getting Started
+
+Follow these steps to set up and run the employee management website locally:
+
+1. Live Link:
+   
+   click here https://programming-booth.web.app/
