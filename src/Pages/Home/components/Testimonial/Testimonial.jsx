@@ -3,6 +3,10 @@ import useAxiosPublic from "../../../../hooks/useAxiosPublic";
 import Loader from "../../../../components/Loader";
 import SectionHeader from "../../../../components/shared/SectionHeader";
 import TestimonialCard from "../../../../components/TestimonialCard/TestimonialCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 

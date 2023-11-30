@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { useEffect, useState } from "react";
 import useUserData from "../../hooks/useUserData";
 import Loader from "../../components/Loader";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const { logOut } = useAuth();
@@ -37,6 +38,9 @@ const Dashboard = () => {
 
   return (
     <div className=" flex  ">
+       <Helmet>
+        <title>PB | DASHBOARD</title>
+      </Helmet>
       <div className=" md:w-72 min-h-screen bg-[#001B79] py-32 ">
         <ul className=" menu space-y-7">
         <li>

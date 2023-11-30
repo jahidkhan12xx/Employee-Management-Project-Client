@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -5,6 +6,9 @@
 const ContactUs = () => {
   return (
     <>
+    <Helmet>
+        <title>PB | CONTACT US</title>
+      </Helmet>
       <section className="relative mx-auto pl-8 z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
