@@ -12,10 +12,10 @@ AOS.init();
 
 export default function BasicAccordion() {
   return (
-    <div className=' my-28 '>
+    <div data-aos="zoom-out" className=' my-28 '>
         <SectionHeader  header={"Frequently Ask Questions"}></SectionHeader>
       <div  className=' w-[50vw] mx-auto'>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}} className=''>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}} className=''>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -29,7 +29,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -43,7 +43,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -57,7 +57,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -71,7 +71,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -85,7 +85,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -99,7 +99,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -113,7 +113,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -127,7 +127,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -141,7 +141,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -155,7 +155,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -169,7 +169,7 @@ export default function BasicAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion data-aos="zoom-out" sx={{backgroundColor: 'transparent', color:"white"}}>
+      <Accordion  sx={{backgroundColor: 'transparent', color:"white"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
